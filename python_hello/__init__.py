@@ -1,2 +1,2 @@
-name = "python_hello"
+name = "python_package_framework"
 

@@ -4,6 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
+
+    # name of the package
     name="python_package_framework",
     version="0.0.1",
     author="John Smith",
@@ -18,10 +20,19 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ] #,
+###########################
+# Dependencies management #
+###########################
+# # installation of required packages:
 #	install_requires=[
-#        'python_world>=0.0',
+#       'numpy',
+#	'networkx',
 #    ],
+#
+# # Installation of additional packages from custom dependency links:
 #    dependency_links=[
-#        'git+https://github.com/ceddlyburge/python_world#egg=python_world-0.0.1',
+#        'git+http://github.com/user/repo/pkg_repo_with_init_and_stuff/master#egg=package-0.0.1',
 #    ]
 )
+
+# https://python-packaging.readthedocs.io/en/latest/dependencies.html
